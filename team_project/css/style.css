@@ -13,8 +13,6 @@
   
   .container {
     width: 42%;
-    float: left;
-    margin: 0.5%;
     background-color: OldLace;
     height: 20em;
     padding: 1em;
@@ -43,4 +41,8 @@
     padding: 0.2em;
   }
   
-  
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+  }
