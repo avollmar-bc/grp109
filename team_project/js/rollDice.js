@@ -10,28 +10,29 @@ function rollDice(diceAmount) {
         
         switch (result[i]) {
             case '1':
-                testCases += "one";
+                testCases += "one ";
                 break;
             case '2':
-                testCases += "two";
+                testCases += "two ";
                 break;
             case '3':
-                testCases += "three";
+                testCases += "three ";
                 break;
             case '4':
-                testCases += "four";
+                testCases += "four ";
                 break;
             case '5':
-                testCases += "five";
+                testCases += "five ";
                 break;
             case '6':
-                testCases += "six";
+                testCases += "six ";
                 break;
+            default:
+                testCases += "fail "
         }
     }
 
     var diceSum = result.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-    console.log(diceSum);
 
     result += " | SUM = " + diceSum;
     document.getElementById("diceResult").innerHTML = result;
