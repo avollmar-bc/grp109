@@ -26,7 +26,7 @@
         <div class="container"> <!--TODO: Add action for form based on JS-->
           <form onsubmit="return false;">
             <label for="dieCount">How many dice do you want to roll?</label><br><br>
-            <input type="number" id="dieCount" name="dieCount" placeholder="Enter here..."><br><br>
+            <input type="number" id="dieCount" name="dieCount" placeholder="Enter here..." max="12"><br><br>
             <input type="submit" value="Roll" onclick="rollDice(document.getElementById('dieCount').value);">
           </form>
         </div>
