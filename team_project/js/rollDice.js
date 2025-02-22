@@ -10,7 +10,7 @@ function rollDice(diceAmount) {
     var diceSum = result.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     console.log(diceSum);
 
-    result += ' SUM = ' + diceSum
+    result += "SUM = " + diceSum;
 
     return result;
 };
