@@ -47,9 +47,12 @@
     gap: 1%;
   }
 
+
   /*-- Dice Styles --*/
 
-
+#diceResult {
+  text-align: center;
+}
 
   .first-face {
     display: flex;
