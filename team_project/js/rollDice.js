@@ -27,8 +27,6 @@ function rollDice(diceAmount) {
             case '6':
                 testCases += "six";
                 break;
-            default:
-                testCases += 'buh'
         }
     }
 
