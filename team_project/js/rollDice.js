@@ -7,6 +7,9 @@ function rollDice(diceAmount) {
         result.push(singleRoll);
     }
     document.getElementById("diceResult").innerHTML = result;
+    var diceSum = result.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    console.log(diceSum);
+
     return result;
 };
 
