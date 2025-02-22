@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/en//face/open-sans" type="text/css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/rollDice.js" type="text/javascript"></script>
     
   </head>
   <body>
@@ -16,10 +17,10 @@
 
       <div class="wrapper">
         <div class="container"> <!--TODO: Add action for form based on JS-->
-          <form aciton="">
+          <form onsubmit="return false;">
             <label for="dieCount">How many dice do you want to roll?</label><br><br>
             <input type="number" id="dieCount" name="dieCount" placeholder="Enter here..."><br><br>
-            <input type="submit" value="Roll">
+            <input type="submit" value="Roll" onclick="rollDice(document.getElementById('dieCount'.value));">
           </form>
         </div>
 
