@@ -10,22 +10,22 @@ function rollDice(diceAmount) {
         
         switch (result[i]) {
             case 1:
-                diceMarkup += '<div class="dice-one"></div>';
+                diceMarkup += '<div class="first-face"><span class="pip"></span></div>';
                 break;
             case 2:
-                diceMarkup += '<div class="dice-two"></div>';
+                diceMarkup += '<div class="second-face"><span class="pip"></span><span class="pip"></span></div>';
                 break;
             case 3:
-                diceMarkup += '<div class="dice-three"></div>';
+                diceMarkup += '<div class="third-face"><span class="pip"></span><span class="pip"></span><span class="pip"></span></div>';
                 break;
             case 4:
-                diceMarkup += '<div class="dice-four"></div>';
+                diceMarkup += '<div class="fourth-face"><div class="column"><span class="pip"></span><span class="pip"></span></div><div class="column"><span class="pip"></span><span class="pip"></span></div></div>';
                 break;
             case 5:
-                diceMarkup += '<div class="dice-five"></div>';
+                diceMarkup += '<div class="fifth-face"><div class="column"><span class="pip"></span><span class="pip"></span></div><div class="column"><span class="pip"></span></div><div class="column"><span class="pip"></span><span class="pip"></span></div></div>';
                 break;
             case 6:
-                diceMarkup += '<div class="dice-six"></div>';
+                diceMarkup += '<div class="sixth-face"><div class="column"><span class="pip"></span><span class="pip"></span><span class="pip"></span></div><div class="column"><span class="pip"></span><span class="pip"></span><span class="pip"></span></div></div>';
                 break;
             default:
                 diceMarkup += 'fail '
