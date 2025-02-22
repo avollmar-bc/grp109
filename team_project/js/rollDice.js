@@ -6,7 +6,7 @@ function rollDice(diceAmount) {
         singleRoll = Math.floor(Math.random() * 6 + 1);
         result.push(singleRoll);
     }
-    console.log(result);
+    document.getElementById("diceResult").innerHTML = result;
     return result;
 };
 
