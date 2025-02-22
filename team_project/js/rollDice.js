@@ -28,7 +28,7 @@ function rollDice(diceAmount) {
                 diceMarkup += '<div class="sixth-face"><div class="column"><span class="pip"></span><span class="pip"></span><span class="pip"></span></div><div class="column"><span class="pip"></span><span class="pip"></span><span class="pip"></span></div></div>';
                 break;
             default:
-                diceMarkup += 'fail '
+                diceMarkup += 'fail ';
         }
     }
 
