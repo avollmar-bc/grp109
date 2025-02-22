@@ -9,22 +9,22 @@ function rollDice(diceAmount) {
         console.log(result[i]);
         
         switch (result[i]) {
-            case '1':
+            case 1:
                 testCases += "one ";
                 break;
-            case '2':
+            case 2:
                 testCases += "two ";
                 break;
-            case '3':
+            case 3:
                 testCases += "three ";
                 break;
-            case '4':
+            case 4:
                 testCases += "four ";
                 break;
-            case '5':
+            case 5:
                 testCases += "five ";
                 break;
-            case '6':
+            case 6:
                 testCases += "six ";
                 break;
             default:
