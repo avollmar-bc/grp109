@@ -14,7 +14,7 @@ function rollDice(diceAmount) {
         //Append roll result to final results array
         result.push(singleRoll);
         
-        //Determine appended markup based on roll result
+        //Determine appended markup based on roll result.
         switch (result[i]) {
             case 1:
                 diceMarkup += '<div class="first-face"><span class="pip"></span></div>';
@@ -44,7 +44,7 @@ function rollDice(diceAmount) {
     var diceSum = result.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
     //Append sum markup to result
-    simpleResult = '<div id="diceSum">' + result + ' | Sum = ' + diceSum + '</div>';
+    simpleResult = result + ' | Sum = ' + diceSum;
     formNode.after(simpleResult);
     //Put the things on the page
     document.getElementById("diceResult").innerHTML = diceMarkup;
