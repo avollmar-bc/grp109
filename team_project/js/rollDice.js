@@ -37,7 +37,7 @@ function rollDice(diceAmount) {
         }
     }
     //Close result markup element
-    diceMarkup += '<div>'
+    diceMarkup += '</div>'
     //Calculate sum
     var diceSum = result.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
