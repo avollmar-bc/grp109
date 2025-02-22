@@ -2,6 +2,8 @@
 function rollDice(diceAmount) {
     //declare vars
     var result = [];
+    var simpleResult = '';
+    var formNode = document.querySelector("form");
     //Start markup for parent dice div
     var diceMarkup = '<div id="diceDisplay">';
     //Roll the dice, did I mention my middle name is 'danger'?
@@ -42,7 +44,8 @@ function rollDice(diceAmount) {
     var diceSum = result.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
     //Append sum markup to result
-    result += '<div id="diceSum"> Sum = ' + diceSum + '</div>';
+    simpleResult = '<div id="diceSum"> Sum = ' + diceSum + '</div>';
+    formNode.after(simpleResult);
     //Put the things on the page
     document.getElementById("diceResult").innerHTML = diceMarkup + "<br/>" + result;
     //Surely we need an output, right?
