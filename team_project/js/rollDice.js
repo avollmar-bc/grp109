@@ -6,28 +6,35 @@ function rollDice(diceAmount) {
         var singleRoll = '';
         singleRoll = Math.floor(Math.random() * 6 + 1);
         result.push(singleRoll);
-
+        console.log(result[i]);
+        
         switch (result[i]) {
-            case 1:
+            case '1':
                 testCases += "one";
-            case 2:
+                break;
+            case '2':
                 testCases += "two";
-            case 3:
+                break;
+            case '3':
                 testCases += "three";
-            case 4:
+                break;
+            case '4':
                 testCases += "four";
-            case 5:
+                break;
+            case '5':
                 testCases += "five";
-            case 6:
+                break;
+            case '6':
                 testCases += "six";
+                break;
             default:
-                testCases += "Jorf";
+                testCases += 'buh'
         }
     }
 
     var diceSum = result.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
     console.log(diceSum);
-    
+
     result += " | SUM = " + diceSum;
     document.getElementById("diceResult").innerHTML = result;
     
