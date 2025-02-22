@@ -36,22 +36,3 @@ function rollDice(diceAmount) {
 };
 
 /* rollDice(document.getElementById('dieCount'.value)) */
-
-switch (result[i]) {
-    var testCases = '';
-
-    case 1:
-        testCases += "one";
-    case 2:
-        testCases += "two";
-    case 3:
-        testCases += "three";
-    case 4:
-        testCases += "four";
-    case 5:
-        testCases += "five";
-    case 6:
-        testCases += "six";
-    default:
-        testCases += "";
-}
