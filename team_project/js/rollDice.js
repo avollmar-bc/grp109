@@ -12,7 +12,7 @@ function rollDice(diceAmount) {
 
     result += "SUM = " + diceSum;
 
-    return result;
+    return result + diceSum;
 };
 
 /* rollDice(document.getElementById('dieCount'.value)) */
