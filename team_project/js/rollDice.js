@@ -44,10 +44,10 @@ function rollDice(diceAmount) {
     var diceSum = result.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
     //Append sum markup to result
-    simpleResult = '<div id="diceSum"> Sum = ' + diceSum + '</div>';
+    simpleResult = '<div id="diceSum">' + result + ' | Sum = ' + diceSum + '</div>';
     formNode.after(simpleResult);
     //Put the things on the page
-    document.getElementById("diceResult").innerHTML = diceMarkup + "<br/>" + result;
+    document.getElementById("diceResult").innerHTML = diceMarkup;
     //Surely we need an output, right?
     return result;
 };
