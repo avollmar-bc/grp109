@@ -1,7 +1,7 @@
 
 function rollDice(diceAmount) {
     var result = [];
-    var testCases = '';
+    var diceMarkup = '';
     for (i = 0; i < diceAmount; i++) {
         var singleRoll = '';
         singleRoll = Math.floor(Math.random() * 6 + 1);
@@ -10,34 +10,33 @@ function rollDice(diceAmount) {
         
         switch (result[i]) {
             case 1:
-                testCases += "one ";
+                diceMarkup += '<div class="dice-one"></div>';
                 break;
             case 2:
-                testCases += "two ";
+                diceMarkup += '<div class="dice-two"></div>';
                 break;
             case 3:
-                testCases += "three ";
+                diceMarkup += '<div class="dice-three"></div>';
                 break;
             case 4:
-                testCases += "four ";
+                diceMarkup += '<div class="dice-four"></div>';
                 break;
             case 5:
-                testCases += "five ";
+                diceMarkup += '<div class="dice-five"></div>';
                 break;
             case 6:
-                testCases += "six ";
+                diceMarkup += '<div class="dice-six"></div>';
                 break;
             default:
-                testCases += "fail "
+                diceMarkup += 'fail '
         }
     }
 
     var diceSum = result.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
     result += " | SUM = " + diceSum;
-    document.getElementById("diceResult").innerHTML = result;
+    document.getElementById("diceResult").innerHTML = result + " | " + diceMarkup;
     
-    console.log(testCases);
     return result;
 };
 
